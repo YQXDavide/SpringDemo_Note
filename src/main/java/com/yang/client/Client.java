@@ -11,5 +11,6 @@ public class Client {
 		ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 		CustomerService service = (CustomerService) context.getBean("customerService");
 		service.saveCustomer();
+		service.deleteCustomer();
 	}
 }
